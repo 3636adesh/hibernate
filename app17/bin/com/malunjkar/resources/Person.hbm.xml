@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.malunjkar.entity.Person" table="persons">
+       <id name ="pName" />
+       <property name ="pAdd" />
+       
+       <union-subclass name="com.malunjkar.entity.Employee" table="emp">
+          <property name ="empName" />
+          <property name ="empSal"/>
+       </union-subclass>
+         <union-subclass name="com.malunjkar.entity.Customer" table="cust">
+          <property name ="cname" />
+          <property name ="cadd"/>
+       </union-subclass>
+       
+    </class>
+</hibernate-mapping>
+
+
+
+

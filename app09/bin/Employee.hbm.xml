@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.malunjkar.enitity.Employee" table="emps">
+    <composite-id>
+       <key-property name="eno" />
+       <key-property name ="ename" />
+    </composite-id>
+       <property name ="eadd" />
+       <property name ="esal" />
+    </class>
+</hibernate-mapping>

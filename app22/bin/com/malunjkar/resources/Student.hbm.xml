@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.malunjkar.entity.Student" table="students">
+       <id name ="stdname" ></id>   
+       <property name ="stdadd" />
+       <many-to-one name="branch" class="com.malunjkar.entity.Branch" cascade="all" />
+    </class>
+</hibernate-mapping>
